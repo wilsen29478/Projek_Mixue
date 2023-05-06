@@ -15,7 +15,28 @@ class _ProjectState extends State<Project> {
         title: Text('Projek contoh commit'),
       ),
       body: Column(
-        children: [Image.asset('prody.png'), Text('Your Number One Solution')],
+        children: [
+          Image.asset('prody.png'),
+          Text('Your Number One Solution'),
+          TextButton(
+            style: TextButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 234, 87, 50)),
+            onPressed: () {},
+            child: Text(
+              "Masuk",
+            ),
+          ),
+          Text.rich(
+            TextSpan(children: [
+              TextSpan(text: 'Masuk'),
+              TextSpan(
+                style: TextStyle(color: Colors.blue),
+              )
+            ]),
+            
+          )
+          Text('Daftar Disini')
+        ],
       ),
     );
   }
