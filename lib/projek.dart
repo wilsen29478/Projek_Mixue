@@ -15,7 +15,7 @@ class _ProjectState extends State<Project> {
         title: Text('Projek contoh commit'),
       ),
       body: Column(
-        children: [Image.asset('prody.png')],
+        children: [Image.asset('prody.png'), Text('Your Number One Solution')],
       ),
     );
   }
